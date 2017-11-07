@@ -1,0 +1,6 @@
+services:
+    aaronadal.persistence.database_manager.provider:
+        class: Aaronadal\PersistenceBundle\DatabaseManager\DatabaseManagerProvider
+
+    database_manager.provider:
+        alias: aaronadal.persistence.database_manager.provider
