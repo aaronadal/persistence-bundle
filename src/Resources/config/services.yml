@@ -4,3 +4,4 @@ services:
 
     database_manager.provider:
         alias: aaronadal.persistence.database_manager.provider
+        public: true
