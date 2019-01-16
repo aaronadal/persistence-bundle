@@ -7,7 +7,7 @@ services:
         public: true
 
     Aaronadal\PersistenceBundle\DatabaseManager\DatabaseManagerProvider:
-        alias: '@aaronadal.persistence.database_manager.provider'
+        alias: aaronadal.persistence.database_manager.provider
 
     Aaronadal\PersistenceBundle\DatabaseManager\DatabaseManagerProviderInterface:
-        alias: '@database_manager.provider'
+        alias: database_manager.provider
