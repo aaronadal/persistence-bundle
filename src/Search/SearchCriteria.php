@@ -14,7 +14,7 @@ use IteratorAggregate;
 class SearchCriteria implements Countable, IteratorAggregate, ArrayAccess
 {
 
-    const DEFAULT_LIMIT = 10;
+    const UNLIMITED = null;
 
     private $page;
     private $limit;
@@ -27,7 +27,7 @@ class SearchCriteria implements Countable, IteratorAggregate, ArrayAccess
      * @param array    $criteria Criterios de búsqueda.
      * @param int|null $limit    Límite de elementos por página.
      */
-    function __construct($page = 1, $criteria = array(), $limit = self::DEFAULT_LIMIT)
+    function __construct($page = 1, $criteria = array(), $limit = self::UNLIMITED)
     {
         $this->page     = $page ?: 1;
         $this->limit    = $limit;

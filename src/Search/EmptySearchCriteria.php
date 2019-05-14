@@ -11,6 +11,6 @@ class EmptySearchCriteria extends SearchCriteria
 
     public function __construct()
     {
-        parent::__construct(1, null, null);
+        parent::__construct(1, null, self::UNLIMITED);
     }
 }
